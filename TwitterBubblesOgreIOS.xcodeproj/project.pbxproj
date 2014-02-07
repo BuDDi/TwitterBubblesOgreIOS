@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E0C2D5C18A3FC7E002BB62E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0C2D5B18A3FC7E002BB62E /* Security.framework */; };
+		8E0C2D5E18A3FD19002BB62E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0C2D5D18A3FD19002BB62E /* MobileCoreServices.framework */; };
+		8E0C2D6018A3FDAA002BB62E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0C2D5F18A3FDA9002BB62E /* SystemConfiguration.framework */; };
+		8E0C2D6218A3FE9D002BB62E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0C2D6118A3FE9D002BB62E /* CFNetwork.framework */; };
+		8E0C2D6418A3FF1A002BB62E /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0C2D6318A3FF1A002BB62E /* libicucore.dylib */; };
+		8E2CF61D18A2E24E004DE579 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2CF61C18A2E24E004DE579 /* CoreGraphics.framework */; };
+		8E2CF61F18A2E24E004DE579 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2CF61E18A2E24E004DE579 /* Foundation.framework */; };
+		8E2CF62118A2E24E004DE579 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2CF62018A2E24E004DE579 /* OpenGLES.framework */; };
+		8E2CF62318A2E24F004DE579 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2CF62218A2E24F004DE579 /* QuartzCore.framework */; };
+		8E2CF62518A2E24F004DE579 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2CF62418A2E24F004DE579 /* UIKit.framework */; };
+		8E2CF62C18A2E24F004DE579 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E2CF62A18A2E24F004DE579 /* InfoPlist.strings */; };
+		8E2CF62E18A2E24F004DE579 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CF62D18A2E24F004DE579 /* main.mm */; };
+		8E2CF63218A2E24F004DE579 /* OgreDemoApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CF63118A2E24F004DE579 /* OgreDemoApp.cpp */; };
+		8E2CF63518A2E24F004DE579 /* OgreFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CF63418A2E24F004DE579 /* OgreFramework.cpp */; };
+		8E2CF67E18A2E24F004DE579 /* ogre.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 8E2CF67D18A2E24F004DE579 /* ogre.cfg */; };
+		8E2CF68018A2E24F004DE579 /* plugins.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 8E2CF67F18A2E24F004DE579 /* plugins.cfg */; };
+		8E2CF68218A2E24F004DE579 /* resources.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 8E2CF68118A2E24F004DE579 /* resources.cfg */; };
+		8E2CF68918A2E8C4004DE579 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E2CF68818A2E8C4004DE579 /* Default-568h@2x.png */; };
+		8E2CF69218A2F95B004DE579 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CF68B18A2F95B004DE579 /* base64.c */; };
+		8E2CF69318A2F95B004DE579 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CF68E18A2F95B004DE579 /* NSData+SRB64Additions.m */; };
+		8E2CF69418A2F95B004DE579 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CF69118A2F95B004DE579 /* SRWebSocket.m */; };
+		8E2CF6A118A2FA5B004DE579 /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CF69718A2FA5B004DE579 /* SocketIO.m */; };
+		8E2CF6A218A2FA5B004DE579 /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CF69918A2FA5B004DE579 /* SocketIOPacket.m */; };
+		8E2CF6A318A2FA5B004DE579 /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CF69B18A2FA5B004DE579 /* SocketIOJSONSerialization.m */; };
+		8E2CF6A418A2FA5B004DE579 /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CF69E18A2FA5B004DE579 /* SocketIOTransportWebsocket.m */; };
+		8E2CF6A518A2FA5B004DE579 /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CF6A018A2FA5B004DE579 /* SocketIOTransportXHR.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E0C2D5B18A3FC7E002BB62E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8E0C2D5D18A3FD19002BB62E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8E0C2D5F18A3FDA9002BB62E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8E0C2D6118A3FE9D002BB62E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8E0C2D6318A3FF1A002BB62E /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		8E2CF61918A2E24E004DE579 /* TwitterBubblesOgreIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterBubblesOgreIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E2CF61C18A2E24E004DE579 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8E2CF61E18A2E24E004DE579 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8E2CF62018A2E24E004DE579 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8E2CF62218A2E24F004DE579 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8E2CF62418A2E24F004DE579 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8E2CF62818A2E24F004DE579 /* TwitterBubblesOgreIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitterBubblesOgreIOS-Prefix.pch"; sourceTree = "<group>"; };
+		8E2CF62918A2E24F004DE579 /* TwitterBubblesOgreIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterBubblesOgreIOS-Info.plist"; sourceTree = "<group>"; };
+		8E2CF62B18A2E24F004DE579 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E2CF62D18A2E24F004DE579 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		8E2CF63018A2E24F004DE579 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E2CF63118A2E24F004DE579 /* OgreDemoApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OgreDemoApp.cpp; sourceTree = "<group>"; };
+		8E2CF63318A2E24F004DE579 /* OgreDemoApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OgreDemoApp.h; sourceTree = "<group>"; };
+		8E2CF63418A2E24F004DE579 /* OgreFramework.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OgreFramework.cpp; sourceTree = "<group>"; };
+		8E2CF63618A2E24F004DE579 /* OgreFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OgreFramework.h; sourceTree = "<group>"; };
+		8E2CF63718A2E24F004DE579 /* OgreStaticPluginLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OgreStaticPluginLoader.h; sourceTree = "<group>"; };
+		8E2CF63C18A2E24F004DE579 /* Examples.material */ = {isa = PBXFileReference; lastKnownFileType = text; path = Examples.material; sourceTree = "<group>"; };
+		8E2CF63D18A2E24F004DE579 /* Ogre.material */ = {isa = PBXFileReference; lastKnownFileType = text; path = Ogre.material; sourceTree = "<group>"; };
+		8E2CF63F18A2E24F004DE579 /* GreenSkin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GreenSkin.jpg; sourceTree = "<group>"; };
+		8E2CF64018A2E24F004DE579 /* spheremap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spheremap.png; sourceTree = "<group>"; };
+		8E2CF64118A2E24F004DE579 /* tusk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tusk.jpg; sourceTree = "<group>"; };
+		8E2CF64318A2E24F004DE579 /* ogrehead.mesh */ = {isa = PBXFileReference; lastKnownFileType = file; path = ogrehead.mesh; sourceTree = "<group>"; };
+		8E2CF64518A2E24F004DE579 /* cubemap.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = cubemap.zip; sourceTree = "<group>"; };
+		8E2CF64618A2E24F004DE579 /* cubemapsJS.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = cubemapsJS.zip; sourceTree = "<group>"; };
+		8E2CF64718A2E24F004DE579 /* SdkTrays.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = SdkTrays.zip; sourceTree = "<group>"; };
+		8E2CF64818A2E24F004DE579 /* skybox.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = skybox.zip; sourceTree = "<group>"; };
+		8E2CF64A18A2E24F004DE579 /* FFPLib_Common.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Common.cg; sourceTree = "<group>"; };
+		8E2CF64B18A2E24F004DE579 /* FFPLib_Common.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Common.glsl; sourceTree = "<group>"; };
+		8E2CF64C18A2E24F004DE579 /* FFPLib_Common.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Common.glsles; sourceTree = "<group>"; };
+		8E2CF64D18A2E24F004DE579 /* FFPLib_Common.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Common.hlsl; sourceTree = "<group>"; };
+		8E2CF64E18A2E24F004DE579 /* FFPLib_Fog.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Fog.cg; sourceTree = "<group>"; };
+		8E2CF64F18A2E24F004DE579 /* FFPLib_Fog.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Fog.glsl; sourceTree = "<group>"; };
+		8E2CF65018A2E24F004DE579 /* FFPLib_Fog.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Fog.glsles; sourceTree = "<group>"; };
+		8E2CF65118A2E24F004DE579 /* FFPLib_Fog.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Fog.hlsl; sourceTree = "<group>"; };
+		8E2CF65218A2E24F004DE579 /* FFPLib_Lighting.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Lighting.cg; sourceTree = "<group>"; };
+		8E2CF65318A2E24F004DE579 /* FFPLib_Lighting.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Lighting.glsl; sourceTree = "<group>"; };
+		8E2CF65418A2E24F004DE579 /* FFPLib_Lighting.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Lighting.glsles; sourceTree = "<group>"; };
+		8E2CF65518A2E24F004DE579 /* FFPLib_Lighting.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Lighting.hlsl; sourceTree = "<group>"; };
+		8E2CF65618A2E24F004DE579 /* FFPLib_Texturing.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Texturing.cg; sourceTree = "<group>"; };
+		8E2CF65718A2E24F004DE579 /* FFPLib_Texturing.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Texturing.glsl; sourceTree = "<group>"; };
+		8E2CF65818A2E24F004DE579 /* FFPLib_Texturing.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Texturing.glsles; sourceTree = "<group>"; };
+		8E2CF65918A2E24F004DE579 /* FFPLib_Texturing.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Texturing.hlsl; sourceTree = "<group>"; };
+		8E2CF65A18A2E24F004DE579 /* FFPLib_Transform.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Transform.cg; sourceTree = "<group>"; };
+		8E2CF65B18A2E24F004DE579 /* FFPLib_Transform.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Transform.glsl; sourceTree = "<group>"; };
+		8E2CF65C18A2E24F004DE579 /* FFPLib_Transform.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Transform.glsles; sourceTree = "<group>"; };
+		8E2CF65D18A2E24F004DE579 /* FFPLib_Transform.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FFPLib_Transform.hlsl; sourceTree = "<group>"; };
+		8E2CF65F18A2E24F004DE579 /* HardwareSkinningShadow.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = HardwareSkinningShadow.cg; sourceTree = "<group>"; };
+		8E2CF66018A2E24F004DE579 /* HardwareSkinningShadow.material */ = {isa = PBXFileReference; lastKnownFileType = text; path = HardwareSkinningShadow.material; sourceTree = "<group>"; };
+		8E2CF66118A2E24F004DE579 /* RTShaderSystem.material */ = {isa = PBXFileReference; lastKnownFileType = text; path = RTShaderSystem.material; sourceTree = "<group>"; };
+		8E2CF66218A2E24F004DE579 /* SampleLib_InstancedViewports.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleLib_InstancedViewports.cg; sourceTree = "<group>"; };
+		8E2CF66318A2E24F004DE579 /* SampleLib_InstancedViewports.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleLib_InstancedViewports.glsl; sourceTree = "<group>"; };
+		8E2CF66418A2E24F004DE579 /* SampleLib_InstancedViewports.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleLib_InstancedViewports.hlsl; sourceTree = "<group>"; };
+		8E2CF66518A2E24F004DE579 /* SampleLib_ReflectionMap.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleLib_ReflectionMap.cg; sourceTree = "<group>"; };
+		8E2CF66618A2E24F004DE579 /* SampleLib_ReflectionMap.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleLib_ReflectionMap.glsl; sourceTree = "<group>"; };
+		8E2CF66718A2E24F004DE579 /* SampleLib_ReflectionMap.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleLib_ReflectionMap.glsles; sourceTree = "<group>"; };
+		8E2CF66818A2E24F004DE579 /* SampleLib_ReflectionMap.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleLib_ReflectionMap.hlsl; sourceTree = "<group>"; };
+		8E2CF66918A2E24F004DE579 /* SGXLib_IntegratedPSSM.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_IntegratedPSSM.cg; sourceTree = "<group>"; };
+		8E2CF66A18A2E24F004DE579 /* SGXLib_IntegratedPSSM.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_IntegratedPSSM.glsl; sourceTree = "<group>"; };
+		8E2CF66B18A2E24F004DE579 /* SGXLib_IntegratedPSSM.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_IntegratedPSSM.glsles; sourceTree = "<group>"; };
+		8E2CF66C18A2E24F004DE579 /* SGXLib_IntegratedPSSM.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_IntegratedPSSM.hlsl; sourceTree = "<group>"; };
+		8E2CF66D18A2E24F004DE579 /* SGXLib_LayeredBlending.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_LayeredBlending.cg; sourceTree = "<group>"; };
+		8E2CF66E18A2E24F004DE579 /* SGXLib_LayeredBlending.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_LayeredBlending.glsl; sourceTree = "<group>"; };
+		8E2CF66F18A2E24F004DE579 /* SGXLib_LayeredBlending.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_LayeredBlending.glsles; sourceTree = "<group>"; };
+		8E2CF67018A2E24F004DE579 /* SGXLib_LayeredBlending.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_LayeredBlending.hlsl; sourceTree = "<group>"; };
+		8E2CF67118A2E24F004DE579 /* SGXLib_NormalMapLighting.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_NormalMapLighting.cg; sourceTree = "<group>"; };
+		8E2CF67218A2E24F004DE579 /* SGXLib_NormalMapLighting.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_NormalMapLighting.glsl; sourceTree = "<group>"; };
+		8E2CF67318A2E24F004DE579 /* SGXLib_NormalMapLighting.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_NormalMapLighting.glsles; sourceTree = "<group>"; };
+		8E2CF67418A2E24F004DE579 /* SGXLib_NormalMapLighting.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_NormalMapLighting.hlsl; sourceTree = "<group>"; };
+		8E2CF67518A2E24F004DE579 /* SGXLib_PerPixelLighting.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_PerPixelLighting.cg; sourceTree = "<group>"; };
+		8E2CF67618A2E24F004DE579 /* SGXLib_PerPixelLighting.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_PerPixelLighting.glsl; sourceTree = "<group>"; };
+		8E2CF67718A2E24F004DE579 /* SGXLib_PerPixelLighting.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_PerPixelLighting.glsles; sourceTree = "<group>"; };
+		8E2CF67818A2E24F004DE579 /* SGXLib_PerPixelLighting.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_PerPixelLighting.hlsl; sourceTree = "<group>"; };
+		8E2CF67918A2E24F004DE579 /* SGXLib_TextureAtlas.cg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_TextureAtlas.cg; sourceTree = "<group>"; };
+		8E2CF67A18A2E24F004DE579 /* SGXLib_TextureAtlas.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_TextureAtlas.glsl; sourceTree = "<group>"; };
+		8E2CF67B18A2E24F004DE579 /* SGXLib_TextureAtlas.glsles */ = {isa = PBXFileReference; lastKnownFileType = text; path = SGXLib_TextureAtlas.glsles; sourceTree = "<group>"; };
+		8E2CF67C18A2E24F004DE579 /* SGXLib_TextureAtlas.hlsl */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SGXLib_TextureAtlas.hlsl; path = ..; sourceTree = "<group>"; };
+		8E2CF67D18A2E24F004DE579 /* ogre.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = ogre.cfg; sourceTree = "<group>"; };
+		8E2CF67F18A2E24F004DE579 /* plugins.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = plugins.cfg; sourceTree = "<group>"; };
+		8E2CF68118A2E24F004DE579 /* resources.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = resources.cfg; sourceTree = "<group>"; };
+		8E2CF68818A2E8C4004DE579 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8E2CF68B18A2F95B004DE579 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		8E2CF68C18A2F95B004DE579 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		8E2CF68D18A2F95B004DE579 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		8E2CF68E18A2F95B004DE579 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SRB64Additions.m"; sourceTree = "<group>"; };
+		8E2CF68F18A2F95B004DE579 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		8E2CF69018A2F95B004DE579 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		8E2CF69118A2F95B004DE579 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		8E2CF69618A2FA5B004DE579 /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIO.h; sourceTree = "<group>"; };
+		8E2CF69718A2FA5B004DE579 /* SocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIO.m; sourceTree = "<group>"; };
+		8E2CF69818A2FA5B004DE579 /* SocketIOPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOPacket.h; sourceTree = "<group>"; };
+		8E2CF69918A2FA5B004DE579 /* SocketIOPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOPacket.m; sourceTree = "<group>"; };
+		8E2CF69A18A2FA5B004DE579 /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOJSONSerialization.h; sourceTree = "<group>"; };
+		8E2CF69B18A2FA5B004DE579 /* SocketIOJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOJSONSerialization.m; sourceTree = "<group>"; };
+		8E2CF69C18A2FA5B004DE579 /* SocketIOTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransport.h; sourceTree = "<group>"; };
+		8E2CF69D18A2FA5B004DE579 /* SocketIOTransportWebsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportWebsocket.h; sourceTree = "<group>"; };
+		8E2CF69E18A2FA5B004DE579 /* SocketIOTransportWebsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportWebsocket.m; sourceTree = "<group>"; };
+		8E2CF69F18A2FA5B004DE579 /* SocketIOTransportXHR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportXHR.h; sourceTree = "<group>"; };
+		8E2CF6A018A2FA5B004DE579 /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportXHR.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E2CF61518A2E24E004DE579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0C2D6418A3FF1A002BB62E /* libicucore.dylib in Frameworks */,
+				8E0C2D6218A3FE9D002BB62E /* CFNetwork.framework in Frameworks */,
+				8E0C2D6018A3FDAA002BB62E /* SystemConfiguration.framework in Frameworks */,
+				8E0C2D5E18A3FD19002BB62E /* MobileCoreServices.framework in Frameworks */,
+				8E0C2D5C18A3FC7E002BB62E /* Security.framework in Frameworks */,
+				8E2CF62318A2E24F004DE579 /* QuartzCore.framework in Frameworks */,
+				8E2CF61D18A2E24E004DE579 /* CoreGraphics.framework in Frameworks */,
+				8E2CF61F18A2E24E004DE579 /* Foundation.framework in Frameworks */,
+				8E2CF62118A2E24E004DE579 /* OpenGLES.framework in Frameworks */,
+				8E2CF62518A2E24F004DE579 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E2CF60F18A2E24E004DE579 = {
+			isa = PBXGroup;
+			children = (
+				8E2CF68818A2E8C4004DE579 /* Default-568h@2x.png */,
+				8E2CF62618A2E24F004DE579 /* TwitterBubblesOgreIOS */,
+				8E2CF61B18A2E24E004DE579 /* Frameworks */,
+				8E2CF61A18A2E24E004DE579 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E2CF61A18A2E24E004DE579 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF61918A2E24E004DE579 /* TwitterBubblesOgreIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E2CF61B18A2E24E004DE579 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E0C2D6318A3FF1A002BB62E /* libicucore.dylib */,
+				8E0C2D6118A3FE9D002BB62E /* CFNetwork.framework */,
+				8E0C2D5F18A3FDA9002BB62E /* SystemConfiguration.framework */,
+				8E0C2D5D18A3FD19002BB62E /* MobileCoreServices.framework */,
+				8E0C2D5B18A3FC7E002BB62E /* Security.framework */,
+				8E2CF61C18A2E24E004DE579 /* CoreGraphics.framework */,
+				8E2CF61E18A2E24E004DE579 /* Foundation.framework */,
+				8E2CF62018A2E24E004DE579 /* OpenGLES.framework */,
+				8E2CF62218A2E24F004DE579 /* QuartzCore.framework */,
+				8E2CF62418A2E24F004DE579 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E2CF62618A2E24F004DE579 /* TwitterBubblesOgreIOS */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF69518A2FA3F004DE579 /* SocketIO */,
+				8E2CF68A18A2F95B004DE579 /* SocketRocket */,
+				8E2CF62A18A2E24F004DE579 /* InfoPlist.strings */,
+				8E2CF62D18A2E24F004DE579 /* main.mm */,
+				8E2CF62F18A2E24F004DE579 /* Basic Ogre Framework */,
+				8E2CF63818A2E24F004DE579 /* Resources */,
+				8E2CF62718A2E24F004DE579 /* Supporting Files */,
+			);
+			path = TwitterBubblesOgreIOS;
+			sourceTree = "<group>";
+		};
+		8E2CF62718A2E24F004DE579 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF62818A2E24F004DE579 /* TwitterBubblesOgreIOS-Prefix.pch */,
+				8E2CF62918A2E24F004DE579 /* TwitterBubblesOgreIOS-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E2CF62F18A2E24F004DE579 /* Basic Ogre Framework */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF63018A2E24F004DE579 /* AppDelegate.h */,
+				8E2CF63118A2E24F004DE579 /* OgreDemoApp.cpp */,
+				8E2CF63318A2E24F004DE579 /* OgreDemoApp.h */,
+				8E2CF63418A2E24F004DE579 /* OgreFramework.cpp */,
+				8E2CF63618A2E24F004DE579 /* OgreFramework.h */,
+				8E2CF63718A2E24F004DE579 /* OgreStaticPluginLoader.h */,
+			);
+			name = "Basic Ogre Framework";
+			sourceTree = "<group>";
+		};
+		8E2CF63818A2E24F004DE579 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF67D18A2E24F004DE579 /* ogre.cfg */,
+				8E2CF67F18A2E24F004DE579 /* plugins.cfg */,
+				8E2CF68118A2E24F004DE579 /* resources.cfg */,
+				8E2CF63918A2E24F004DE579 /* media */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8E2CF63918A2E24F004DE579 /* media */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF63A18A2E24F004DE579 /* materials */,
+				8E2CF64218A2E24F004DE579 /* models */,
+				8E2CF64418A2E24F004DE579 /* packs */,
+				8E2CF64918A2E24F004DE579 /* RTShaderLib */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
+		8E2CF63A18A2E24F004DE579 /* materials */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF63B18A2E24F004DE579 /* scripts */,
+				8E2CF63E18A2E24F004DE579 /* textures */,
+			);
+			path = materials;
+			sourceTree = "<group>";
+		};
+		8E2CF63B18A2E24F004DE579 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF63C18A2E24F004DE579 /* Examples.material */,
+				8E2CF63D18A2E24F004DE579 /* Ogre.material */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		8E2CF63E18A2E24F004DE579 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF63F18A2E24F004DE579 /* GreenSkin.jpg */,
+				8E2CF64018A2E24F004DE579 /* spheremap.png */,
+				8E2CF64118A2E24F004DE579 /* tusk.jpg */,
+			);
+			path = textures;
+			sourceTree = "<group>";
+		};
+		8E2CF64218A2E24F004DE579 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF64318A2E24F004DE579 /* ogrehead.mesh */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		8E2CF64418A2E24F004DE579 /* packs */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF64518A2E24F004DE579 /* cubemap.zip */,
+				8E2CF64618A2E24F004DE579 /* cubemapsJS.zip */,
+				8E2CF64718A2E24F004DE579 /* SdkTrays.zip */,
+				8E2CF64818A2E24F004DE579 /* skybox.zip */,
+			);
+			path = packs;
+			sourceTree = "<group>";
+		};
+		8E2CF64918A2E24F004DE579 /* RTShaderLib */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF64A18A2E24F004DE579 /* FFPLib_Common.cg */,
+				8E2CF64B18A2E24F004DE579 /* FFPLib_Common.glsl */,
+				8E2CF64C18A2E24F004DE579 /* FFPLib_Common.glsles */,
+				8E2CF64D18A2E24F004DE579 /* FFPLib_Common.hlsl */,
+				8E2CF64E18A2E24F004DE579 /* FFPLib_Fog.cg */,
+				8E2CF64F18A2E24F004DE579 /* FFPLib_Fog.glsl */,
+				8E2CF65018A2E24F004DE579 /* FFPLib_Fog.glsles */,
+				8E2CF65118A2E24F004DE579 /* FFPLib_Fog.hlsl */,
+				8E2CF65218A2E24F004DE579 /* FFPLib_Lighting.cg */,
+				8E2CF65318A2E24F004DE579 /* FFPLib_Lighting.glsl */,
+				8E2CF65418A2E24F004DE579 /* FFPLib_Lighting.glsles */,
+				8E2CF65518A2E24F004DE579 /* FFPLib_Lighting.hlsl */,
+				8E2CF65618A2E24F004DE579 /* FFPLib_Texturing.cg */,
+				8E2CF65718A2E24F004DE579 /* FFPLib_Texturing.glsl */,
+				8E2CF65818A2E24F004DE579 /* FFPLib_Texturing.glsles */,
+				8E2CF65918A2E24F004DE579 /* FFPLib_Texturing.hlsl */,
+				8E2CF65A18A2E24F004DE579 /* FFPLib_Transform.cg */,
+				8E2CF65B18A2E24F004DE579 /* FFPLib_Transform.glsl */,
+				8E2CF65C18A2E24F004DE579 /* FFPLib_Transform.glsles */,
+				8E2CF65D18A2E24F004DE579 /* FFPLib_Transform.hlsl */,
+				8E2CF65E18A2E24F004DE579 /* materials */,
+				8E2CF66218A2E24F004DE579 /* SampleLib_InstancedViewports.cg */,
+				8E2CF66318A2E24F004DE579 /* SampleLib_InstancedViewports.glsl */,
+				8E2CF66418A2E24F004DE579 /* SampleLib_InstancedViewports.hlsl */,
+				8E2CF66518A2E24F004DE579 /* SampleLib_ReflectionMap.cg */,
+				8E2CF66618A2E24F004DE579 /* SampleLib_ReflectionMap.glsl */,
+				8E2CF66718A2E24F004DE579 /* SampleLib_ReflectionMap.glsles */,
+				8E2CF66818A2E24F004DE579 /* SampleLib_ReflectionMap.hlsl */,
+				8E2CF66918A2E24F004DE579 /* SGXLib_IntegratedPSSM.cg */,
+				8E2CF66A18A2E24F004DE579 /* SGXLib_IntegratedPSSM.glsl */,
+				8E2CF66B18A2E24F004DE579 /* SGXLib_IntegratedPSSM.glsles */,
+				8E2CF66C18A2E24F004DE579 /* SGXLib_IntegratedPSSM.hlsl */,
+				8E2CF66D18A2E24F004DE579 /* SGXLib_LayeredBlending.cg */,
+				8E2CF66E18A2E24F004DE579 /* SGXLib_LayeredBlending.glsl */,
+				8E2CF66F18A2E24F004DE579 /* SGXLib_LayeredBlending.glsles */,
+				8E2CF67018A2E24F004DE579 /* SGXLib_LayeredBlending.hlsl */,
+				8E2CF67118A2E24F004DE579 /* SGXLib_NormalMapLighting.cg */,
+				8E2CF67218A2E24F004DE579 /* SGXLib_NormalMapLighting.glsl */,
+				8E2CF67318A2E24F004DE579 /* SGXLib_NormalMapLighting.glsles */,
+				8E2CF67418A2E24F004DE579 /* SGXLib_NormalMapLighting.hlsl */,
+				8E2CF67518A2E24F004DE579 /* SGXLib_PerPixelLighting.cg */,
+				8E2CF67618A2E24F004DE579 /* SGXLib_PerPixelLighting.glsl */,
+				8E2CF67718A2E24F004DE579 /* SGXLib_PerPixelLighting.glsles */,
+				8E2CF67818A2E24F004DE579 /* SGXLib_PerPixelLighting.hlsl */,
+				8E2CF67918A2E24F004DE579 /* SGXLib_TextureAtlas.cg */,
+				8E2CF67A18A2E24F004DE579 /* SGXLib_TextureAtlas.glsl */,
+				8E2CF67B18A2E24F004DE579 /* SGXLib_TextureAtlas.glsles */,
+				8E2CF67C18A2E24F004DE579 /* SGXLib_TextureAtlas.hlsl */,
+			);
+			path = RTShaderLib;
+			sourceTree = "<group>";
+		};
+		8E2CF65E18A2E24F004DE579 /* materials */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF65F18A2E24F004DE579 /* HardwareSkinningShadow.cg */,
+				8E2CF66018A2E24F004DE579 /* HardwareSkinningShadow.material */,
+				8E2CF66118A2E24F004DE579 /* RTShaderSystem.material */,
+			);
+			path = materials;
+			sourceTree = "<group>";
+		};
+		8E2CF68A18A2F95B004DE579 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF68B18A2F95B004DE579 /* base64.c */,
+				8E2CF68C18A2F95B004DE579 /* base64.h */,
+				8E2CF68D18A2F95B004DE579 /* NSData+SRB64Additions.h */,
+				8E2CF68E18A2F95B004DE579 /* NSData+SRB64Additions.m */,
+				8E2CF68F18A2F95B004DE579 /* SocketRocket-Prefix.pch */,
+				8E2CF69018A2F95B004DE579 /* SRWebSocket.h */,
+				8E2CF69118A2F95B004DE579 /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		8E2CF69518A2FA3F004DE579 /* SocketIO */ = {
+			isa = PBXGroup;
+			children = (
+				8E2CF69618A2FA5B004DE579 /* SocketIO.h */,
+				8E2CF69718A2FA5B004DE579 /* SocketIO.m */,
+				8E2CF69818A2FA5B004DE579 /* SocketIOPacket.h */,
+				8E2CF69918A2FA5B004DE579 /* SocketIOPacket.m */,
+				8E2CF69A18A2FA5B004DE579 /* SocketIOJSONSerialization.h */,
+				8E2CF69B18A2FA5B004DE579 /* SocketIOJSONSerialization.m */,
+				8E2CF69C18A2FA5B004DE579 /* SocketIOTransport.h */,
+				8E2CF69D18A2FA5B004DE579 /* SocketIOTransportWebsocket.h */,
+				8E2CF69E18A2FA5B004DE579 /* SocketIOTransportWebsocket.m */,
+				8E2CF69F18A2FA5B004DE579 /* SocketIOTransportXHR.h */,
+				8E2CF6A018A2FA5B004DE579 /* SocketIOTransportXHR.m */,
+			);
+			name = SocketIO;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E2CF61818A2E24E004DE579 /* TwitterBubblesOgreIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E2CF68518A2E250004DE579 /* Build configuration list for PBXNativeTarget "TwitterBubblesOgreIOS" */;
+			buildPhases = (
+				8E2CF61418A2E24E004DE579 /* Sources */,
+				8E2CF61518A2E24E004DE579 /* Frameworks */,
+				8E2CF61618A2E24E004DE579 /* Resources */,
+				8E2CF61718A2E24E004DE579 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterBubblesOgreIOS;
+			productName = TwitterBubblesOgreIOS;
+			productReference = 8E2CF61918A2E24E004DE579 /* TwitterBubblesOgreIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E2CF61018A2E24E004DE579 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 8E2CF61318A2E24E004DE579 /* Build configuration list for PBXProject "TwitterBubblesOgreIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E2CF60F18A2E24E004DE579;
+			productRefGroup = 8E2CF61A18A2E24E004DE579 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E2CF61818A2E24E004DE579 /* TwitterBubblesOgreIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E2CF61618A2E24E004DE579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E2CF62C18A2E24F004DE579 /* InfoPlist.strings in Resources */,
+				8E2CF67E18A2E24F004DE579 /* ogre.cfg in Resources */,
+				8E2CF68218A2E24F004DE579 /* resources.cfg in Resources */,
+				8E2CF68918A2E8C4004DE579 /* Default-568h@2x.png in Resources */,
+				8E2CF68018A2E24F004DE579 /* plugins.cfg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E2CF61718A2E24E004DE579 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# This shell script simply copies resources into their respective locations\nditto \"$PROJECT_DIR/$PROJECT_NAME/media/\" \"$BUILT_PRODUCTS_DIR/TwitterBubblesOgreIOS.app/media/\"\nditto $PROJECT_DIR/$PROJECT_NAME/*.cfg \"$BUILT_PRODUCTS_DIR/TwitterBubblesOgreIOS.app/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E2CF61418A2E24E004DE579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E2CF6A518A2FA5B004DE579 /* SocketIOTransportXHR.m in Sources */,
+				8E2CF69418A2F95B004DE579 /* SRWebSocket.m in Sources */,
+				8E2CF69318A2F95B004DE579 /* NSData+SRB64Additions.m in Sources */,
+				8E2CF63518A2E24F004DE579 /* OgreFramework.cpp in Sources */,
+				8E2CF62E18A2E24F004DE579 /* main.mm in Sources */,
+				8E2CF6A218A2FA5B004DE579 /* SocketIOPacket.m in Sources */,
+				8E2CF6A118A2FA5B004DE579 /* SocketIO.m in Sources */,
+				8E2CF69218A2F95B004DE579 /* base64.c in Sources */,
+				8E2CF63218A2E24F004DE579 /* OgreDemoApp.cpp in Sources */,
+				8E2CF6A418A2FA5B004DE579 /* SocketIOTransportWebsocket.m in Sources */,
+				8E2CF6A318A2FA5B004DE579 /* SocketIOJSONSerialization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E2CF62A18A2E24F004DE579 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E2CF62B18A2E24F004DE579 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E2CF68318A2E250004DE579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = No;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitterBubblesOgreIOS/TwitterBubblesOgreIOS-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = No;
+				GCC_THUMB_SUPPORT = "";
+				INFOPLIST_FILE = "TwitterBubblesOgreIOS/TwitterBubblesOgreIOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/lib/Release\"",
+					"\"$(OGRE_SDK_ROOT)/iOSDependencies/lib/release\"",
+					"\"$(OGRE_SDK_ROOT)/iOSDependencies/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8E2CF68418A2E250004DE579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_INLINES_ARE_PRIVATE_EXTERN = No;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitterBubblesOgreIOS/TwitterBubblesOgreIOS-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = No;
+				GCC_THUMB_SUPPORT = "";
+				INFOPLIST_FILE = "TwitterBubblesOgreIOS/TwitterBubblesOgreIOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/lib/Release\"",
+					"\"$(OGRE_SDK_ROOT)/iOSDependencies/lib/release\"",
+					"\"$(OGRE_SDK_ROOT)/iOSDependencies/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8E2CF68618A2E250004DE579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/include/OGRE\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/RenderSystems/GLES2\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/RTShaderSystem\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/iOS\"",
+					"\"$(OGRE_SDK_ROOT)/include\"",
+					"\"$(OGRE_SDK_ROOT)/include/OIS\"",
+					"\"$(OGRE_SDK_ROOT)/iOSDependencies/include\"",
+				);
+				OGRE_SDK_ROOT = /Users/buddi/Progging/lib_c/OgreSDK;
+				OTHER_CFLAGS = "-DOGRE_USE_GLES2=1";
+				OTHER_LDFLAGS = (
+					"-lOIS",
+					"-lOgreMainStatic",
+					"-lRenderSystem_GLES2Static",
+					"-lOgreRTShaderSystemStatic",
+					"-lmesaglsl2",
+					"-lboost_system",
+					"-lboost_chrono",
+					"-lboost_date_time",
+					"-lboost_thread",
+					"-lFreeType",
+					"-lFreeImage",
+					"-lzzip",
+					"-lz",
+				);
+				SR = "";
+			};
+			name = Debug;
+		};
+		8E2CF68718A2E250004DE579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/include/OGRE\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/RenderSystems/GLES2\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/RTShaderSystem\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/iOS\"",
+					"\"$(OGRE_SDK_ROOT)/include\"",
+					"\"$(OGRE_SDK_ROOT)/include/OIS\"",
+					"\"$(OGRE_SDK_ROOT)/iOSDependencies/include\"",
+				);
+				OGRE_SDK_ROOT = /Users/buddi/Progging/lib_c/OgreSDK;
+				OTHER_CFLAGS = "-DOGRE_USE_GLES2=1";
+				OTHER_LDFLAGS = (
+					"-lOIS",
+					"-lOgreMainStatic",
+					"-lRenderSystem_GLES2Static",
+					"-lOgreRTShaderSystemStatic",
+					"-lmesaglsl2",
+					"-lboost_system",
+					"-lboost_chrono",
+					"-lboost_date_time",
+					"-lboost_thread",
+					"-lFreeType",
+					"-lFreeImage",
+					"-lzzip",
+					"-lz",
+				);
+				SR = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E2CF61318A2E24E004DE579 /* Build configuration list for PBXProject "TwitterBubblesOgreIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2CF68318A2E250004DE579 /* Debug */,
+				8E2CF68418A2E250004DE579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E2CF68518A2E250004DE579 /* Build configuration list for PBXNativeTarget "TwitterBubblesOgreIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2CF68618A2E250004DE579 /* Debug */,
+				8E2CF68718A2E250004DE579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E2CF61018A2E24E004DE579 /* Project object */;
+}

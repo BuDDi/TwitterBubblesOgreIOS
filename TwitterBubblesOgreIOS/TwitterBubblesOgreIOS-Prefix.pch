@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'TwitterBubblesOgreIOS' target in the 'TwitterBubblesOgreIOS' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    		
+#endif
